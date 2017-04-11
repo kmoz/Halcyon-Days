@@ -43,3 +43,12 @@
   .socials{margin: 0;}
   }
 };
+
+@include respond-to(small){
+.contact{
+    .contact__box{
+      margin-bottom: 3rem;
+    }
+  .socials{margin: 0;}
+  }
+};

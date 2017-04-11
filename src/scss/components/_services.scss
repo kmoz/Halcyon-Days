@@ -42,7 +42,7 @@
         float: none;
         width: 100%;
       }
-      .carousel-wrapper,{
+      .carousel-wrapper{
         padding: 1rem;
         .heading__h2 {text-align: center;}
         .arrow{text-align: center; margin-bottom: 1rem;}
@@ -50,3 +50,21 @@
     }
   }
 };
+
+@media (min-width: 768px) and (max-width: 935px){
+  .services{
+    &__item{
+      margin-bottom: 3rem;
+    }
+    .services-iphone{
+      margin-bottom: 2rem;
+      .iphone-wrapper,
+      .carousel-wrapper{
+        padding: 0;
+        float: none;
+        width: 80%;
+        margin: 0 auto;
+      }
+  }
+}
+}

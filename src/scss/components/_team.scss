@@ -5,7 +5,9 @@
 }
 
 @include respond-to(mobile){
-  .team__item{
-    margin-bottom: 2rem;
-  }
+  .team__item{margin-bottom: 2rem;}
+};
+
+@include respond-to(small){
+  .team__item{margin-bottom: 3rem;}
 };
