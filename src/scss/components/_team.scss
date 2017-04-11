@@ -1,0 +1,11 @@
+.team{
+  &__item{
+    text-align: center;
+  }
+}
+
+@include respond-to(mobile){
+  .team__item{
+    margin-bottom: 2rem;
+  }
+};

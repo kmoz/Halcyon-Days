@@ -1,0 +1,26 @@
+.footer{
+  background: $darker;
+
+  &__wrapper{
+    padding: 1.4rem 0;
+    p{
+      color: #fff;
+      font-family: 'GothamRoundedBook';
+      a{
+        color: $gray;
+      }
+    }
+  }
+  &__left, &__right{
+    margin: 0;
+  }
+  &__left{float: left};
+  &__right{float:right;}
+}
+
+@include respond-to(mobile){
+  .footer{
+    &__wrapper{text-align: center;}
+    p{float: none;}
+  }
+};

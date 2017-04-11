@@ -1,0 +1,21 @@
+@mixin clear-both {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+@mixin background-rgba($color, $opacity) {
+  background-color: rgba(red($color),green($color),blue($color), $opacity);
+}
+
+@mixin color-rgba($color, $opacity) {
+  color: rgba(red($color),green($color),blue($color), $opacity);
+}
+
+@mixin touch-hover($selector)
+{
+  @at-root .mouse #{$selector}:hover, .touch #{$selector}:active
+  {
+    @content;
+  }
+}

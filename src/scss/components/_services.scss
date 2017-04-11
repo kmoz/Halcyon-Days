@@ -1,0 +1,52 @@
+.services{
+  padding: 3rem 0 0 0;
+  &__item{
+    text-align: center;
+  }
+  &__name{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: $dark;
+    margin-top: 1.5rem;
+  }
+  .services-iphone{
+    &::after{
+      @include clear-both;
+    }
+    .iphone-wrapper,
+    .carousel-wrapper{
+
+      width: 50%;
+      float: left;
+    }
+    .iphone-wrapper{
+
+    }
+    .carousel-wrapper{
+          padding: 3rem;
+          .heading__h2, .arrow{text-align: center;}
+          .arrow{margin-bottom: 1.5rem;}
+    }
+  }
+}
+
+@include respond-to(mobile){
+  .services{
+    .services__item{
+      margin-bottom: 3rem;
+    }
+    .services-iphone{
+      margin-bottom: 2rem;
+      .iphone-wrapper,
+      .carousel-wrapper{
+        float: none;
+        width: 100%;
+      }
+      .carousel-wrapper,{
+        padding: 1rem;
+        .heading__h2 {text-align: center;}
+        .arrow{text-align: center; margin-bottom: 1rem;}
+      }
+    }
+  }
+};

@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'GothamRoundedBook';
+  src: url('../fonts/gotham-rounded-book.otf');
+}
+@font-face {
+  font-family: 'GothamRoundedMedium';
+  src: url('../fonts/gotham-rounded-medium.otf');
+}
+@font-face {
+  font-family: 'GothamRoundedMediumItalic';
+  src: url('../fonts/gotham-rounded-medium-italic');
+}
+@font-face {
+  font-family: 'GothamRoundedBookItalic';
+  src: url('../fonts/gotham-book-italic.otf');
+}
+
+
+
+html{
+  font-size: 14px;
+}
+
+body{
+  font-family: 'GothamRoundedMedium';
+  color: $gray;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+a{
+  color: inherit;
+}
+
+.btn-arrow{
+  display: block;
+  margin: 2rem auto 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: $aquamarine-light;
+  transition: background-color 0.4s;
+  color: #fff;
+  text-align: center;
+  i{
+    line-height: 50px;
+    font-size: 1.3rem;
+  }
+  &:hover{
+    background-color: $aquamarine;
+    transition: background-color 0.4s;
+    color: #fff;
+  }
+}
+
+
+section{
+  padding: 3rem 0;
+}
+
+.img-center{
+  margin: 0 auto;
+  display: block;
+}
+
+.text-justify{
+  text-align: justify;
+}
+.text-right{
+  text-align: right;
+}
+
+.heading{
+  text-align: center;
+  padding-bottom: 4rem;
+  &__h2{
+    text-transform: uppercase;
+    color: $dark;
+    font-size: 1.07rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.h2{
+  text-transform: uppercase;
+  color: $dark;
+  font-size: 1.07rem;
+  letter-spacing: 0.1rem;
+}
+
+.line{
+  width: 10%;
+  background-color: $aquamarine;
+  height: 3px;
+}
+
+.dark{color: $dark;}
+.--white{color: #fff}
+.--aquamarine{color: $aquamarine;}
+.socials{
+  list-style-type: none;
+  // display: inline-block;
+  padding: 0;
+
+  li{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    // margin: 0 auto;
+    &:nth-child(2){
+      margin: 0 0.5rem;
+    }
+    a{
+      display: block;
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem;
+      background: $darker;
+      border-radius: 50%;
+      transition: all 0.5s;
+      text-align: center;
+      i{
+        color: #fff;
+        font-size: 1.3rem;
+      }
+      &:hover{
+        background-color: $aquamarine;
+        transition: all 0.4s;
+      }
+    }
+  }
+}

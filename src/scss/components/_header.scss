@@ -1,0 +1,53 @@
+.header{
+
+
+  nav{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    .site-nav{
+      list-style-type: none;
+      background: $darker;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      li{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        cursor: pointer;
+        height: 20%;
+        position: relative;
+        transition: all 0.4s;
+        &:hover{background: $aquamarine; transition: all 0.4s;}
+        a{
+          color: $gray;
+          transition: all 0.4s;
+          &:hover{
+            background-color: inherit;
+            text-decoration: none;
+            @include color-rgba($gray, 0.6);;
+            transition: all 0.4s;
+          }
+        }
+      }
+      li+li{
+        margin-top: 0.8rem;
+      }
+    }
+  }
+  // @for $i from 1 through 5 {
+  //   nav.in li:nth-child(#{$i}) {
+  //     @include transition(transform 0.5s $ease-out-cubic (0.1s*$i), opacity 0.5s linear (0.1s*$i));
+  //   }
+  // }
+  //
+  // @for $i from 5 through 1 {
+  //   nav.out li:nth-child(#{$i}) {
+  //     @include transition(transform 0.3s $ease-in-cubic (0.05s*(5-$i)), opacity 0.3s linear (0.05s*(5-$i)));
+  //   }
+  // }
+}

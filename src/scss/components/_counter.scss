@@ -1,0 +1,42 @@
+.counter{
+  background: url('../img/counter-bg.jpg') no-repeat center center;
+  background-size: cover;
+  .wrapper{
+    text-transform: uppercase;
+    color: #fff;
+    h2{
+      font-family: 'GothamRoundedBook';
+      text-transform: uppercase;
+      font-size: 2.9rem;
+      letter-spacing: 0.3rem;
+      span{
+        font-size: inherit;
+      }
+    }
+    span{
+      font-size: 1.8rem;
+      letter-spacing: 0.3rem;
+      font-family: 'GothamRoundedBook';
+      em{
+        font-family: 'GothamRoundedMedium';
+      }
+    }
+
+  }
+}
+
+@include respond-to(large){
+  .counter{
+    background-attachment: fixed;
+    padding: 50px 0;
+  }
+};
+
+@include respond-to(mobile){
+  .counter{
+    .wrapper{
+      h2{font-size: 2.5rem};
+      span{font-size: 1rem;}
+    }
+  }
+};

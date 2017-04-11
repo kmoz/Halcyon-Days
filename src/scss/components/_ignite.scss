@@ -1,0 +1,29 @@
+.ignite{
+  background: $darker;
+  text-align: center;
+
+  &__box{
+    padding: 4.3rem 0;
+    @include touch-hover(&){
+      color: $aquamarine;
+      border-color: $aquamarine;
+      text-decoration: none;
+      transition: all 0.4s;
+    }
+    .h2{
+      color: #fff;
+      border: 2px solid #fff;
+      display: inline;
+      padding: 2.1rem 2.9rem;
+      transition: all 0.4s;
+
+      &:hover{
+        color: $aquamarine;
+        border-color: $aquamarine;
+        text-decoration: none;
+        transition: all 0.4s;
+      }
+    }
+
+  }
+}

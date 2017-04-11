@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# PSD, node modules and template
+psd
+node_modules
+HalcyonDaysTemplate_PeterFinlan
