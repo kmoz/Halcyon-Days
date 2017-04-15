@@ -21,3 +21,11 @@ $('.count').counterUp({
   delay: 10,
   time: 1000
 });
+
+//AOS
+AOS.init({
+      offset: 200,
+      duration: 300,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
