@@ -1,4 +1,12 @@
+//nav
 
+$('#nav-trigger').click(function(){
+  $('body').toggleClass('menu-open');
+})
+
+$('.menu li a').click(function(){
+  $('body').toggleClass('menu-open')
+})
 
 //Scroll animations
 $(function() {
